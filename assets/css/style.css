@@ -1,0 +1,32 @@
+#globe {
+    height: 200px;
+    width: 200px;
+}
+
+#header {
+    float: right;
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: underline;
+    /*border-bottom: 5px solid red;*/
+    text-align: auto;
+    padding: 30px 50px 0 0;
+    font-size: 70px;
+    color: #283593;
+}
+
+body, .jumbotron {
+    background-color: #EAEDED;
+}
+
+.questions {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    color: #283593;
+}
+
+#time {
+	text-align: center;
+	color: #283593;
+	font-size: 100px; 
+}
+

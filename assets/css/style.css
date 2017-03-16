@@ -1,32 +1,54 @@
 #globe {
     height: 200px;
     width: 200px;
+    margin-left: 350px;
+    margin-top: 40px;
 }
 
 #header {
     float: right;
     font-family: 'Permanent Marker', cursive;
     text-decoration: underline;
-    /*border-bottom: 5px solid red;*/
-    text-align: auto;
-    padding: 30px 50px 0 0;
+    /*margin: 70px 450px 0 0;*/
     font-size: 70px;
     color: #283593;
+    margin: auto;
 }
 
-body, .jumbotron {
+body,
+{
+    width: 1000px;
     background-color: #EAEDED;
+    align-content: center;
+    margin-bottom: 50px;
 }
 
-.questions {
+#questions {
     text-align: center;
     font-family: 'Permanent Marker', cursive;
     color: #283593;
 }
 
 #time {
-	text-align: center;
-	color: #283593;
-	font-size: 100px; 
+    text-align: center;
+    color: #283593;
+    font-size: 100px;
 }
 
+#button {
+    height: 100px;
+    width: 400px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #ABB2B9;
+    font-family: 'Permanent Marker', cursive;
+    color: #283593;
+    margin-left: 750px;
+}
+
+#results {
+background-color: #ABB2B9;
+font-family: 'Permanent Marker', cursive;
+color: #283593;
+}

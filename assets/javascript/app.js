@@ -10,9 +10,11 @@ var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
 
 
 $("#game").hide();
+$("#results").hide();
 
 $("#button").on("click", function() {
     $("#game").show();
+
     $(this).hide();
     startGame();
 
@@ -47,17 +49,20 @@ function endGame() {
         } else {
             incorrect++;
         }
-       
+
     }
 
     console.log(correct, incorrect, unanswered);
 
-    var result = "Correct: "+ correct +"<br>";
+    var result = "Correct: " + correct + "<br>";
     result += "Incorrect: " + incorrect + "<br>";
     result += "Unanswered: " + unanswered + "<br>";
 
-    
+
     $("#results").html(result);
+    $("#results").show();
+
+    $("#game").hide();
 
 }
 
@@ -154,10 +159,6 @@ var questions = [
     }
 ]
 
-// var str = <div id="#questions" id = "q_n"><questions>
-
-// $("#questions").append(questions)
-
 
 
 function createQuest(question, questionNum) {
@@ -175,14 +176,11 @@ function createQuest(question, questionNum) {
         html += "<input type = 'radio' name = '" + questionNum;
         html += "' value = '" + i + " '>";
         html += question.answers[i];
-        //html += "<br>";
     }
 
     html += "</div>";
     console.log(html);
     return html;
-
-
 }
 
 function startGame() {
